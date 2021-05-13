@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+
+  mongo-database:
+    image: bitnami/mongodb:4.2
+    restart: always
+    environment:
+      - MONGODB_USERNAME=${MONGO_DATABASE_USER}
+      - MONGODB_DATABASE=${MONGO_DATABASE_NAME}
+      - MONGODB_PASSWORD=${MONGO_PASS}
+      - MONGODB_ROOT_PASSWORD=${MONGO_ROOT_PASS}
+    volumes:
+      - "mongo-data:/data/db"
+    ports:
+      - 27017:27017
+
+volumes:
+  mongo-data:
+    driver: local

@@ -34,33 +34,13 @@ describe('POST /api/words', () => {
           chai.request(app)
                .post('/api/words')
                .set('content-type', 'application/json')
+               .set('x-api-key', 'api-key')
                .send(wordObj)
                .end((err, res) => {
                     res.should.have.status(200);
                     res.body.should.be.a('object');
                     res.body.should.have.property('message').be.eql('Word created!');
                     res.body.should.have.property('word').should.be.not.empty;
-               });
-          /* Check if word was added */
-          chai.request(app)
-               .get('/api/words')
-               .end((err, res) => {
-                    res.should.have.status(200);
-                    res.body.should.be.a('object');
-                    res.body.should.have.property('message').be.eql('Words found!');
-                    res.body.should.have.property('words').should.be.not.empty;
-                    const { words } = res.body;
-                    expect(words).to.have.lengthOf(1);
-                    const createdWord = words[0];
-                    expect(createdWord)
-                         .to.have.property('language')
-                         .be.eql('en');
-                    expect(createdWord)
-                         .to.have.property('word')
-                         .be.eql('Aquiver');
-                    expect(createdWord)
-                         .to.have.property('definition')
-                         .be.eql('(adj.) Quivering, trembling');
                     done();
                });
      });
@@ -71,6 +51,7 @@ describe('POST /api/words', () => {
           chai.request(app)
                .post('/api/words')
                .set('content-type', 'application/json')
+               .set('x-api-key', 'api-key')
                .send(wordObj)
                .end((err, res) => {
                     res.should.have.status(400);

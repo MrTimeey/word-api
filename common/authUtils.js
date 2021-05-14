@@ -4,19 +4,14 @@ const { apiKey } = require('../config');
 const clientApiKeyValidation = (req, res, next) => {
      if (!needsAuthorization.includes(req.method)) {
           next();
-          console.log('Called next');
           return;
      }
      let clientApiKey = req.get('x-api-key');
-     console.log('Start');
      if (!clientApiKey) {
-          console.log('key missing');
           return res.status(400).send({
                message: 'Missing Api Key',
           });
      }
-     console.log('searched', apiKey);
-     console.log('client', clientApiKey);
      if (apiKey === clientApiKey) {
           next();
           return;
@@ -25,5 +20,15 @@ const clientApiKeyValidation = (req, res, next) => {
           message: 'Invalid Api Key',
      });
 };
+
+function getValidApiKey(req) {
+     console.log(process.env.TEST_FLAG, process.env.TEST_FLAG && process.env.TEST_FLAG === 'test');
+     if (process.env.TEST_FLAG && process.env.TEST_FLAG === 'test') {
+          console.log('use fake key');
+          return 'api-key';
+     }
+     console.log('whoop');
+     return req.get('x-api-key');
+}
 
 module.exports = { clientApiKeyValidation };

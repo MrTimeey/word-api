@@ -67,7 +67,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"word\":\"Mellifluous\",\r\n    \"definition\":\"(adj.) A sound that is sweet and smooth, pleasing to hear\"\r\n}",
+					"raw": "{\r\n    \"word\": \"Mellifluous\",\r\n    \"definition\": \"(adj.) A sound that is sweet and smooth, pleasing to hear\",\r\n    \"language\": \"en\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -141,12 +141,12 @@
 			"response": []
 		},
 		{
-			"name": "Delete word",
+			"name": "Get random word",
 			"request": {
-				"method": "DELETE",
+				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/dinosaurs/{{createdWordId}}",
+					"raw": "http://localhost:8000/api/words/random",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -154,7 +154,72 @@
 					"port": "8000",
 					"path": [
 						"api",
-						"dinosaurs",
+						"words",
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get random word for lang 'en'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/words/random/en",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"words",
+						"random",
+						"en"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get random word for lang 'de'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/words/random/de",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"words",
+						"random",
+						"de"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete word",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/words/{{createdWordId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"words",
 						"{{createdWordId}}"
 					]
 				}

@@ -48,6 +48,54 @@ router
           });
      });
 
+router.route('/random').get(function(req, res) {
+     Word.countDocuments().exec(function(err, count) {
+          if (count === 0) {
+               res.json({
+                    message: 'No word found!',
+               });
+               return;
+          }
+          const random = Math.floor(Math.random() * count);
+          Word.findOne()
+               .skip(random)
+               .exec(function(err, result) {
+                    if (err) {
+                         res.send(err);
+                    } else {
+                         res.json({
+                              message: 'Random word found!',
+                              result,
+                         });
+                    }
+               });
+     });
+});
+
+router.route('/random/:lang').get(function(req, res) {
+     Word.countDocuments({ language: req.params.lang }).exec(function(err, count) {
+          const random = Math.floor(Math.random() * count);
+          if (count === 0) {
+               res.json({
+                    message: 'No word for provided language found!',
+               });
+               return;
+          }
+          Word.findOne({ language: req.params.language })
+               .skip(random)
+               .exec(function(err, result) {
+                    if (err) {
+                         res.send(err);
+                    } else {
+                         res.json({
+                              message: 'Random word found!',
+                              result,
+                         });
+                    }
+               });
+     });
+});
+
 router
      .route('/:word_id')
      .get(function(req, res) {

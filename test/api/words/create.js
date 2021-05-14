@@ -3,6 +3,7 @@ process.env.TEST_FLAG = 'test';
 const chai = require('chai');
 
 const { expect } = chai;
+const { apiKey } = require('../../../config.js');
 
 const should = chai.should();
 const chaiHttp = require('chai-http');
@@ -34,7 +35,7 @@ describe('POST /api/words', () => {
           chai.request(app)
                .post('/api/words')
                .set('content-type', 'application/json')
-               .set('x-api-key', 'api-key')
+               .set('x-api-key', apiKey)
                .send(wordObj)
                .end((err, res) => {
                     res.should.have.status(200);
@@ -51,7 +52,7 @@ describe('POST /api/words', () => {
           chai.request(app)
                .post('/api/words')
                .set('content-type', 'application/json')
-               .set('x-api-key', 'api-key')
+               .set('x-api-key', apiKey)
                .send(wordObj)
                .end((err, res) => {
                     res.should.have.status(400);

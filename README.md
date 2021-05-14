@@ -18,6 +18,8 @@ MONGO_DB_PASSWORD=<your-mongo-db-password>
 MONGO_DB_HOST=<your mongo-db-host>
 MONGO_DB_PORT=<your-mongo-db-port>
 MONGO_DB_NAME=<your-mongo-db-name>
+# Security
+API_KEY=<your-api-key>
 ```
 The `.env.example` file is located at root level.
 
@@ -58,9 +60,10 @@ npm run lint
 
 ## Inspiration
 Used various sources to gather the knowledge. I listed some of them to provide you some background knowledge:
-* https://medium.com/@_platypus_/express-a-simple-rest-api-9d82488e829f
-* https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786
-* https://www.youtube.com/watch?v=7VNgjfmv_fE&ab_channel=KrisFoster
+* [REST-API](https://medium.com/@_platypus_/express-a-simple-rest-api-9d82488e829f)
+* [Environment Variables](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
+* [Testing](https://www.youtube.com/watch?v=7VNgjfmv_fE&ab_channel=KrisFoster)
+* [Authorization](https://stoplight.io/blog/api-keys-best-practices-to-authenticate-apis/)
 
 ## Contribution
 Please consider enabling linting on save:

@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const wordRouter = require('./routers/word.js');
+const { clientApiKeyValidation } = require('./common/authUtils');
 
 const app = express();
 
@@ -8,6 +9,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 const router = express.Router();
+
+router.use(clientApiKeyValidation);
 
 router.use(function(req, res, next) {
      console.log('Something is happening!');

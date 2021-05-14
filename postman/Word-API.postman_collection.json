@@ -64,7 +64,13 @@
 			],
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apiKey}}",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"word\": \"Mellifluous\",\r\n    \"definition\": \"(adj.) A sound that is sweet and smooth, pleasing to hear\",\r\n    \"language\": \"en\"\r\n}",
@@ -114,7 +120,13 @@
 			"name": "Change word",
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apiKey}}",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"word\":\"Mellifluous\",\r\n    \"definition\":\"(adj.) A sound that is sweet and smooth, pleasing to hear.\"\r\n}",
@@ -209,9 +221,15 @@
 			"name": "Delete word",
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apiKey}}",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "http://localhost:8000/api/words/{{createdWordId}}",
+					"raw": "http://localhost:8000/api/words/{{createdWordId}}?",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -221,6 +239,12 @@
 						"api",
 						"words",
 						"{{createdWordId}}"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
 					]
 				}
 			},

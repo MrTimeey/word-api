@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const wordRouter = require('./routers/word.js');
+const batchWordRouter = require('./routers/batch.js');
+const randomWordRouter = require('./routers/random.js');
 const { clientApiKeyValidation } = require('./common/authUtils');
 
 const app = express();
@@ -22,6 +24,8 @@ router.get('/', function(req, res) {
 });
 
 router.use('/words', wordRouter);
+router.use('/batch', batchWordRouter);
+router.use('/random', randomWordRouter);
 
 app.use('/api', router);
 

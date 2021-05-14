@@ -21,14 +21,4 @@ const clientApiKeyValidation = (req, res, next) => {
      });
 };
 
-function getValidApiKey(req) {
-     console.log(process.env.TEST_FLAG, process.env.TEST_FLAG && process.env.TEST_FLAG === 'test');
-     if (process.env.TEST_FLAG && process.env.TEST_FLAG === 'test') {
-          console.log('use fake key');
-          return 'api-key';
-     }
-     console.log('whoop');
-     return req.get('x-api-key');
-}
-
 module.exports = { clientApiKeyValidation };

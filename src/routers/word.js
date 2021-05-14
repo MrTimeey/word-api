@@ -1,13 +1,7 @@
 const express = require('express');
 const Word = require('../db/models/word.js');
 const router = express.Router();
-
-function validLanguage(language) {
-     if (!language) {
-          return false;
-     }
-     return ['en', 'de'].includes(language);
-}
+const { validLanguage } = require('../common/languageUtils');
 
 router
      .route('/')
@@ -46,54 +40,6 @@ router
                }
           });
      });
-
-router.route('/random').get(function(req, res) {
-     Word.countDocuments().exec(function(err, count) {
-          if (count === 0) {
-               res.json({
-                    message: 'No word found!',
-               });
-               return;
-          }
-          const random = Math.floor(Math.random() * count);
-          Word.findOne()
-               .skip(random)
-               .exec(function(err, result) {
-                    if (err) {
-                         res.send(err);
-                    } else {
-                         res.json({
-                              message: 'Random word found!',
-                              result,
-                         });
-                    }
-               });
-     });
-});
-
-router.route('/random/:lang').get(function(req, res) {
-     Word.countDocuments({ language: [req.params.lang] }).exec(function(err, count) {
-          if (count === 0) {
-               res.json({
-                    message: 'No word for provided language found!',
-               });
-               return;
-          }
-          const random = Math.floor(Math.random() * count);
-          Word.findOne({ language: req.params.lang })
-               .skip(random)
-               .exec(function(err, result) {
-                    if (err) {
-                         res.send(err);
-                    } else {
-                         res.json({
-                              message: 'Random word found!',
-                              result,
-                         });
-                    }
-               });
-     });
-});
 
 router
      .route('/:word_id')

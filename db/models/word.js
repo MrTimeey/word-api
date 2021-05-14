@@ -7,7 +7,6 @@ let WordSchema = new schema({
      language: {
           type: String,
           enum: ['de', 'en'],
-          default: 'en',
      },
 });
 

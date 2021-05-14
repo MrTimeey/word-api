@@ -4,7 +4,7 @@ const router = express.Router();
 
 function validLanguage(language) {
      if (!language) {
-          return true;
+          return false;
      }
      return ['en', 'de'].includes(language);
 }
@@ -25,7 +25,6 @@ router
      })
      .post(function(req, res) {
           let { word, definition, language } = req.body;
-          console.log(word, definition);
           if (!word || !definition || !validLanguage(language)) {
                res.status(400).json({
                     message: 'Wrong format provided!',
@@ -73,15 +72,15 @@ router.route('/random').get(function(req, res) {
 });
 
 router.route('/random/:lang').get(function(req, res) {
-     Word.countDocuments({ language: req.params.lang }).exec(function(err, count) {
-          const random = Math.floor(Math.random() * count);
+     Word.countDocuments({ language: [req.params.lang] }).exec(function(err, count) {
           if (count === 0) {
                res.json({
                     message: 'No word for provided language found!',
                });
                return;
           }
-          Word.findOne({ language: req.params.language })
+          const random = Math.floor(Math.random() * count);
+          Word.findOne({ language: req.params.lang })
                .skip(random)
                .exec(function(err, result) {
                     if (err) {

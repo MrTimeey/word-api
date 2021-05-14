@@ -4,7 +4,7 @@ const { environment, port } = require('./config');
 
 db.connect().then(() => {
      app.listen(port, () => {
-          console.log('Play with dinosaurs on port ' + port);
+          console.log('Enjoy new words on port ' + port);
           console.log('Started with environment: ' + environment);
      });
 });

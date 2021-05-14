@@ -29,6 +29,7 @@ describe('POST /api/words', () => {
           let wordObj = {
                word: 'Aquiver',
                definition: '(adj.) Quivering, trembling',
+               language: 'en',
           };
           chai.request(app)
                .post('/api/words')
@@ -40,7 +41,7 @@ describe('POST /api/words', () => {
                     res.body.should.have.property('message').be.eql('Word created!');
                     res.body.should.have.property('word').should.be.not.empty;
                });
-          /* Check if default language was added */
+          /* Check if word was added */
           chai.request(app)
                .get('/api/words')
                .end((err, res) => {

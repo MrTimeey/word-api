@@ -1,5 +1,5 @@
 const needsAuthorization = ['POST', 'PUT', 'DELETE'];
-const { apiKey } = require('../../config');
+const { apiKey } = require('../config/config');
 
 const clientApiKeyValidation = (req, res, next) => {
      if (!needsAuthorization.includes(req.method)) {

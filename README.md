@@ -5,7 +5,7 @@ An API for retrieving and saving words to build a 'word of day' application.
 It's also a learning project for various technologies like nodejs, express, mongoose and heruko deployment.
 
 ## Application env file
-Create an .env file for defining the application properties
+Create an .env file in `src/config` for defining the application properties
 
 Example:
 ```dotenv
@@ -21,7 +21,7 @@ MONGO_DB_NAME=<your-mongo-db-name>
 # Security
 API_KEY=<your-api-key>
 ```
-The `.env.example` file is located at root level.
+The `.env.example` file is located at `src/config`.
 
 ## MongoDB connection
 You have to insert your mongoDB connection to the env file. You can use a hosted MongoDB from [mLab](https://mlab.com/) or host it yourself with provided docker-compose script.

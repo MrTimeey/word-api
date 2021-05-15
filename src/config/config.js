@@ -1,5 +1,5 @@
 const dotenv = require('dotenv');
-const result = dotenv.config();
+const result = dotenv.config({ path: './src/config/.env' });
 if (result.error) {
      throw result.error;
 }

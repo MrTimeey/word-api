@@ -1,6 +1,6 @@
 const app = require('./app.js');
 const db = require('./src/db/index.js');
-const { environment, port } = require('./config');
+const { environment, port } = require('./src/config/config');
 
 db.connect().then(() => {
      app.listen(port, () => {

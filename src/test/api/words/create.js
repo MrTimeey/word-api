@@ -3,7 +3,7 @@ process.env.TEST_FLAG = 'test';
 const chai = require('chai');
 
 const { expect } = chai;
-const { apiKey } = require('../../../../config.js');
+const { apiKey } = require('../../../config/config.js');
 
 const should = chai.should();
 const chaiHttp = require('chai-http');

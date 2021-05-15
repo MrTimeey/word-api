@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { mongoUrl } = require('../../config');
+const { mongoUrl } = require('../config/config');
 const TEST_DB_URI = 'mongodb://localhost:27017/dinos';
 
 function connect() {

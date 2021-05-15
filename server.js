@@ -1,5 +1,5 @@
 const app = require('./app.js');
-const db = require('./db/index.js');
+const db = require('./src/db/index.js');
 const { environment, port } = require('./config');
 
 db.connect().then(() => {

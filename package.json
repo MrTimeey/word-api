@@ -31,6 +31,9 @@
     "nodemon": "^2.0.7",
     "prettier": "^1.19.1"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "prettier": {
     "trailingComma": "es5",
     "tabWidth": 5,

@@ -48,7 +48,6 @@
     "api",
     "nodejs",
     "express",
-    "heruko",
     "mongoose"
   ],
   "author": {

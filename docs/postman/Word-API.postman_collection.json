@@ -11,11 +11,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{host}}:{{port}}/api",
+					"raw": "{{host}}{{port}}/api",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api"
 					]
@@ -29,11 +28,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{host}}:{{port}}/api/words",
+					"raw": "{{host}}{{port}}/api/words",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"words"
@@ -79,11 +77,10 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}:{{port}}/api/words",
+					"raw": "{{host}}{{port}}/api/words",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"words"
@@ -98,11 +95,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{host}}:{{port}}/api/words/{{createdWordId}}",
+					"raw": "{{host}}{{port}}/api/words/{{createdWordId}}",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"words",
@@ -133,11 +129,10 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}:{{port}}/api/words/{{createdWordId}}",
+					"raw": "{{host}}{{port}}/api/words/{{createdWordId}}",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"words",
@@ -153,11 +148,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{host}}:{{port}}/api/random",
+					"raw": "{{host}}{{port}}/api/random",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"random"
@@ -172,11 +166,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{host}}:{{port}}/api/random/en",
+					"raw": "{{host}}{{port}}/api/random/en",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"random",
@@ -192,11 +185,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{host}}:{{port}}/api/random/de",
+					"raw": "{{host}}{{port}}/api/random/de",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"random",
@@ -218,11 +210,10 @@
 					}
 				],
 				"url": {
-					"raw": "{{host}}:{{port}}/api/words/{{createdWordId}}",
+					"raw": "{{host}}{{port}}/api/words/{{createdWordId}}",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"words",
@@ -266,11 +257,10 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}:{{port}}/api/batch/create_all",
+					"raw": "{{host}}{{port}}/api/batch/create_all",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"batch",
@@ -314,11 +304,10 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}:{{port}}/api/batch/create_all",
+					"raw": "{{host}}{{port}}/api/batch/create_all",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"batch",
@@ -340,11 +329,10 @@
 					}
 				],
 				"url": {
-					"raw": "{{host}}:{{port}}/api/batch/delete_all",
+					"raw": "{{host}}{{port}}/api/batch/delete_all",
 					"host": [
-						"{{host}}"
+						"{{host}}{{port}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"api",
 						"batch",

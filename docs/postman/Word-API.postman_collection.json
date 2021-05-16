@@ -11,12 +11,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
 					"path": [
 						"api"
 					]
@@ -30,12 +29,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/words",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api/words",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"words"
@@ -81,12 +79,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/api/words",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api/words",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"words"
@@ -101,12 +98,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/words/{{createdWordId}}",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api/words/{{createdWordId}}",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"words",
@@ -137,12 +133,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/api/words/{{createdWordId}}",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api/words/{{createdWordId}}",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"words",
@@ -158,12 +153,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/random",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api/random",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"random"
@@ -178,12 +172,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/random/en",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api/random/en",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"random",
@@ -199,12 +192,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/random/de",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api/random/de",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"random",
@@ -226,12 +218,11 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/api/words/{{createdWordId}}",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api/words/{{createdWordId}}",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"words",
@@ -242,7 +233,7 @@
 			"response": []
 		},
 		{
-			"name": "Create multiple words",
+			"name": "Create multiple words - DE",
 			"event": [
 				{
 					"listen": "test",
@@ -275,12 +266,59 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/api/batch/create_all",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api/batch/create_all",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"batch",
+						"create_all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create multiple words - EN",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apiKey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"words\": [{\r\n            \"word\": \"Aquiver\",\r\n            \"definition\": \"(adj.) Quivering, trembling.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Mellifluous\",\r\n\t\t\t\"definition\": \"(adj.) A sound that is sweet and smooth, pleasing to hear.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Ineffable\",\r\n            \"definition\": \"(adj.) Too great to be expressed in words.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Hiraeth\",\r\n\t\t\t\"definition\": \"(n.) A homesickness for a home you can't return to, or that never was.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Nefarious\",\r\n            \"definition\": \"(adj.) Wicked, villainous, despicable.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Somnambulist\",\r\n            \"definition\": \"(n.) A person who sleepwalks.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Epoch\",\r\n            \"definition\": \"(n.) A particular period of time in history or a person's life.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Sonorous\",\r\n            \"definition\": \"(adj.) An imposingly deep and full sound.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Serendipity\",\r\n            \"definition\": \"(n.) The chance occurrence of events in a beneficial way.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Limerence\",\r\n            \"definition\": \"(n.) The state of being infatuated with another person.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Bombinate\",\r\n            \"definition\": \"(v.) To make a humming or buzzing noise.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Ethereal\",\r\n            \"definition\": \"(adj.) Extremely delicate, light, not of this world.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Illicit\",\r\n            \"definition\": \"(adj.) Not legally permitted.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Petrichor\",\r\n            \"definition\": \"(n.) The pleasant, earthy smell after rain.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Iridescent\",\r\n            \"definition\": \"(adj.) Producing a display of rainbowlike colours.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Epiphany\",\r\n            \"definition\": \"(n.) A moment of sudden revelation.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Supine\",\r\n            \"definition\": \"(adj.) Lying face upwards.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Luminescence\",\r\n            \"definition\": \"(n.) Light products by chemical, electrical, or physiological means.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Solitude\",\r\n            \"definition\": \"(n.) a state of seclusion or isolation.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Aurora\",\r\n            \"definition\": \"(n.) dawn.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Syzygy\",\r\n            \"definition\": \"(n.) an alignment of celestial bodies.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Phosphenes\",\r\n            \"definition\": \"(n.) the light and colours produced by rubbing your eyes.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Oblivion\",\r\n            \"definition\": \"(n.) the state of being unaware of what is happening around you.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Ephemeral\",\r\n            \"definition\": \"(adj.) lasting for a very short time.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Incandescence\",\r\n            \"definition\": \"(n.) light produced by high temperatures.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Denouement\",\r\n            \"definition\": \"(n.) the resolution of a narrative.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Vellichor\",\r\n            \"definition\": \"(n.) the strange wistfulness of used bookshops.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Eloquence\",\r\n            \"definition\": \"(n.) the art of using language in an apt, fluent way.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Defenestration\",\r\n            \"definition\": \"(n.) the act of throwing someone out of a window.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Sonder\",\r\n            \"definition\": \"(n.) the realization that each passerby has a life as vivid and complex as your own.\",\r\n            \"language\": \"en\"\r\n        }, {\r\n            \"word\": \"Effervescence\",\r\n            \"definition\": \"(n.) bubbles in a liquid.\",\r\n            \"language\": \"en\"\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}/api/batch/create_all",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"batch",
@@ -302,12 +340,11 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/api/batch/delete_all",
-					"protocol": "http",
+					"raw": "{{host}}:{{port}}/api/batch/delete_all",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "8000",
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"batch",

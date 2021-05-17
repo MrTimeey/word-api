@@ -224,6 +224,30 @@
 			"response": []
 		},
 		{
+			"name": "Search word",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}{{port}}/api/search?word=Mellifluous",
+					"host": [
+						"{{host}}{{port}}"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "word",
+							"value": "Mellifluous"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Create multiple words - DE",
 			"event": [
 				{

@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "serve": "node_modules/.bin/nodemon server.js --exec",
+    "serve": "nodemon server.js --exec",
     "test": "mocha --recursive --exit --timeout 1000000",
     "lint": "eslint --fix --ext .js,.jsx ."
   },

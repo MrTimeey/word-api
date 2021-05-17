@@ -26,6 +26,7 @@ router.use('/words', require('./src/routers/word.js'));
 router.use('/batch', require('./src/routers/batch.js'));
 router.use('/random', require('./src/routers/random.js'));
 router.use('/search', require('./src/routers/search'));
+router.use('/health', require('./src/routers/healthcheck'));
 
 app.use('/api', router);
 

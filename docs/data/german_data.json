@@ -1,488 +1,689 @@
 {
-    "words": [{
-            "word": "adäquat",
-            "definition": "(adj.) angemessen, entsprechend",
-            "language": "de"
-        }, {
-            "word": "affektiert",
-			"definition": "(adj.) gekünstelt, geziert",
-            "language": "de"
-        }, {
-            "word": "agil",
-            "definition": "(adj.) beweglich, wendig",
-            "language": "de"
-        }, {
-            "word": "akribisch",
-			"definition": "(adj.) höchst sorgfältig, äußerst gründlich",
-            "language": "de"
-        }, {
-            "word": "antagonistisch",
-            "definition": "(adj.) gegensätzlich, widerstreitend",
-            "language": "de"
-        }, {
-            "word": "apathisch",
-            "definition": "(adj.) teilnahmslos, abgestumpft, gleichgültig",
-            "language": "de"
-        }, {
-            "word": "arbiträr",
-            "definition": "(adj.) beliebig, willkürlich",
-            "language": "de"
-        }, {
-            "word": "argusäugig",
-            "definition": "(adj.) scharf beobachtend, wachsam",
-            "language": "de"
-        }, {
-            "word": "arkan",
-            "definition": "(adj.) geheim, nicht zugänglich",
-            "language": "de"
-        }, {
-            "word": "arriviert",
-            "definition": "(adj.) angesehen, etabliert",
-            "language": "de"
-        }, {
-            "word": "artifiziell",
-            "definition": "(adj.) künstlich, gekünstelt",
-            "language": "de"
-        }, {
-            "word": "banal",
-            "definition": "(adj.) nichts Besonderes, alltäglich, gewöhnlich",
-            "language": "de"
-        }, {
-            "word": "bigott",
-            "definition": "(adj.) frömmelnd, scheinheilig",
-            "language": "de"
-        }, {
-            "word": "brachial",
-            "definition": "(adj.) handgreiflich, mit roher Körperkraft",
-            "language": "de"
-        }, {
-            "word": "designiert",
-            "definition": "(adj.) für etwas (Aufgabe, Amt) vorgesehen",
-            "language": "de"
-        }, {
-            "word": "desolat",
-            "definition": "(adj.) trostlos, traurig, miserabel",
-            "language": "de"
-        }, {
-            "word": "diabolisch",
-            "definition": "(adj.) teuflisch",
-            "language": "de"
-        }, {
-            "word": "diametral",
-            "definition": "(adj.) entgegengesetzt, gegensätzlich",
-            "language": "de"
-        }, {
-            "word": "differenziert",
-            "definition": "(adj.) fein abgestuft, nuanciert",
-            "language": "de"
-        }, {
-            "word": "diffizil",
-            "definition": "(adj.) schwierig, kompliziert",
-            "language": "de"
-        }, {
-            "word": "diffus",
-            "definition": "(adj.) unklar, ungeordnet, verschwommen",
-            "language": "de"
-        }, {
-            "word": "disparat",
-            "definition": "(adj.) ungleichartig, nicht zueinanderpassend",
-            "language": "de"
-        }, {
-            "word": "disponibel",
-            "definition": "(adj.) sofort verfügbar, frei",
-            "language": "de"
-        }, {
-            "word": "distinguiert",
-            "definition": "(adj.) betont vornehm",
-            "language": "de"
-        }, {
-            "word": "divergent",
-            "definition": "(adj.) entgegengesetzt, auseinanderstrebend",
-            "language": "de"
-        }, {
-            "word": "dolorös",
-            "definition": "(adj.) schmerzhaft",
-            "language": "de"
-        }, {
-            "word": "durabel",
-            "definition": "(adj.) dauerhaft, haltbar, stabil",
-            "language": "de"
-        }, {
-            "word": "effektiv",
-            "definition": "(adj.) wirksam",
-            "language": "de"
-        }, {
-            "word": "effizient",
-            "definition": "(adj.) viel Leistung in Relation zum Aufwand zu erbringen",
-            "language": "de"
-        }, {
-            "word": "elaboriert",
-            "definition": "(adj.) differenziert ausgebildet, hoch entwickelt",
-            "language": "de"
-        }, {
-            "word": "elanvoll",
-            "definition": "(adj.) mit Schwung und Begeisterung",
-            "language": "de"
-        }, {
-            "word": "eloquent",
-            "definition": "(adj.) redegewandt, wortreich",
-            "language": "de"
-        }, {
-            "word": "eminent",
-            "definition": "(adj.) sehr, außerordentlich, äußerst",
-            "language": "de"
-        }, {
-            "word": "explizit",
-            "definition": "(adj.) ausdrücklich, deutlich",
-            "language": "de"
-        }, {
-            "word": "formidabel",
-            "definition": "(adj.) beeindruckend, großartig",
-            "language": "de"
-        }, {
-            "word": "frappant",
-            "definition": "(adj.) verblüffend, überraschend, frappierend",
-            "language": "de"
-        }, {
-            "word": "fulminant",
-            "definition": "(adj.) ausgezeichnet, toll, großartig",
-            "language": "de"
-        }, {
-            "word": "generös",
-            "definition": "(adj.) großzügig",
-            "language": "de"
-        }, {
-            "word": "gravierend",
-            "definition": "(adj.) schwerwiegend",
-            "language": "de"
-        }, {
-            "word": "ikonisch",
-            "definition": "(adj.) bildhaft, anschaulich",
-            "language": "de"
-        }, {
-            "word": "illuster",
-            "definition": "(adj.) berühmt, namhaft, Bewunderung hervorrufend",
-            "language": "de"
-        }, {
-            "word": "illustrativ",
-            "definition": "(adj.) veranschaulichend, erläuternd",
-            "language": "de"
-        }, {
-            "word": "impertinent",
-            "definition": "(adj.) ungehörig, frech, unverschämt",
-            "language": "de"
-        }, {
-            "word": "inadäquat",
-            "definition": "(adj.) unangemessen, unpassend",
-            "language": "de"
-        }, {
-            "word": "inakkurat",
-            "definition": "(adj.) unsorgfältig, ungenau",
-            "language": "de"
-        }, {
-            "word": "infernalisch",
-            "definition": "(adj.) höllisch, teuflisch, unerträglich",
-            "language": "de"
-        }, {
-            "word": "informell",
-            "definition": "(adj.) lässig, locker, leger",
-            "language": "de"
-        }, {
-            "word": "ingeniös",
-            "definition": "(adj.) erfinderisch, schöpferisch",
-            "language": "de"
-        }, {
-            "word": "initial",
-            "definition": "(adj.) anfänglich, beginnend",
-            "language": "de"
-        }, {
-            "word": "insistent",
-            "definition": "(adj.) beharrlich, hartnäckig",
-            "language": "de"
-        }, {
-            "word": "insolent",
-            "definition": "(adj.) anmaßend, unverschämt, frech",
-            "language": "de"
-        }, {
-            "word": "irrelevant",
-            "definition": "(adj.) unerheblich, ohne Bedeutung",
-            "language": "de"
-        }, {
-            "word": "kausal",
-            "definition": "(adj.) ursächlich",
-            "language": "de"
-        }, {
-            "word": "klandestin",
-            "definition": "(adj.) geheim, heimlich",
-            "language": "de"
-        }, {
-            "word": "kongenial",
-            "definition": "(adj.) einem Genie ebenbürtig",
-            "language": "de"
-        }, {
-            "word": "konsistent",
-            "definition": "(adj.) stabil, beständig",
-            "language": "de"
-        }, {
-            "word": "konsterniert",
-            "definition": "(adj.) bestürzt, fassungslos",
-            "language": "de"
-        }, {
-            "word": "kontinuierlich",
-            "definition": "(adj.) ununterbrochen",
-            "language": "de"
-        }, {
-            "word": "konträr",
-            "definition": "(adj.) entgegengesetzt, gegensätzlich",
-            "language": "de"
-        }, {
-            "word": "kurios",
-            "definition": "(adj.) merkwürdig, skurril",
-            "language": "de"
-        }, {
-            "word": "lapidar",
-            "definition": "(adj.) kurz und knapp, pointiert",
-            "language": "de"
-        }, {
-            "word": "larmoyant",
-            "definition": "(adj.) weinerlich",
-            "language": "de"
-        }, {
-            "word": "legitim",
-            "definition": "(adj.) gesetzlich anerkannt, rechtmäßig",
-            "language": "de"
-        }, {
-            "word": "loyal",
-            "definition": "(adj.) vertragstreu, redlich,",
-            "language": "de"
-        }, {
-            "word": "lukrativ",
-            "definition": "(adj.) einträglich, gewinnbringend",
-            "language": "de"
-        }, {
-            "word": "luziferisch",
-            "definition": "(adj.) teuflisch, bösartig",
-            "language": "de"
-        }, {
-            "word": "maliziös",
-            "definition": "(adj.) boshaft",
-            "language": "de"
-        }, {
-            "word": "marginal",
-            "definition": "(adj.) geringfügig, unwichtig",
-            "language": "de"
-        }, {
-            "word": "martialisch",
-            "definition": "(adj.) kriegerisch",
-            "language": "de"
-        }, {
-            "word": "medioker",
-            "definition": "(adj.) mittelmäßig",
-            "language": "de"
-        }, {
-            "word": "mokant",
-            "definition": "(adj.) spöttisch",
-            "language": "de"
-        }, {
-            "word": "morbid",
-            "definition": "(adj.) kränklich, angekränkelt, brüchig",
-            "language": "de"
-        }, {
-            "word": "nebulös",
-            "definition": "(adj.) verschwommen, unklar",
-            "language": "de"
-        }, {
-            "word": "neuralgisch",
-            "definition": "(adj.) besonders empfindlich, anfällig für Störungen",
-            "language": "de"
-        }, {
-            "word": "obligatorisch",
-            "definition": "(adj.) bindend, vorgeschrieben, verbindlich",
-            "language": "de"
-        }, {
-            "word": "obsolet",
-            "definition": "(adj.) überflüssig, nicht mehr üblich",
-            "language": "de"
-        }, {
-            "word": "obstinat",
-            "definition": "(adj.) starrsinnig, unbelehrbar",
-            "language": "de"
-        }, {
-            "word": "opportun",
-            "definition": "(adj.) gelegen kommend, von Vorteil",
-            "language": "de"
-        }, {
-            "word": "opulent",
-            "definition": "(adj.) üppig, verschwenderisch",
-            "language": "de"
-        }, {
-            "word": "ostentativ",
-            "definition": "(adj.) betont, provozierend, zur Schau stellend",
-            "language": "de"
-        }, {
-            "word": "pekuniär",
-            "definition": "(adj.) geldlich, finanziell",
-            "language": "de"
-        }, {
-            "word": "penibel",
-            "definition": "(adj.) kleinlich",
-            "language": "de"
-        }, {
-            "word": "perfide",
-            "definition": "(adj.) verschlagen, hinterhältig, gemein",
-            "language": "de"
-        }, {
-            "word": "perniziös",
-            "definition": "(adj.) unheilvoll, verderblich, bösartig",
-            "language": "de"
-        }, {
-            "word": "pittoresk",
-            "definition": "(adj.) malerisch",
-            "language": "de"
-        }, {
-            "word": "pointiert",
-            "definition": "(adj.) gezielt, scharf zugespitzt",
-            "language": "de"
-        }, {
-            "word": "prädestiniert",
-            "definition": "(adj.) in hohem Maße geeignet",
-            "language": "de"
-        }, {
-            "word": "prägnant",
-            "definition": "(adj.) etwas in knapper Form genau treffend",
-            "language": "de"
-        }, {
-            "word": "präsent",
-            "definition": "(adj.) anwesend, gegenwärtig",
-            "language": "de"
-        }, {
-            "word": "prätentiös",
-            "definition": "(adj.) Eindruck machen wollend, sich wichtig machen",
-            "language": "de"
-        }, {
-            "word": "prekär",
-            "definition": "(adj.) schwierig, heikel, misslich",
-            "language": "de"
-        }, {
-            "word": "preziös",
-            "definition": "(adj.) gekünstelt, unnatürlich (auch pretiös)",
-            "language": "de"
-        }, {
-            "word": "prononciert",
-            "definition": "(adj.) eindeutig, entschieden, betont",
-            "language": "de"
-        }, {
-            "word": "prosaisch",
-            "definition": "(adj.) nüchtern, sachlich, trocken",
-            "language": "de"
-        }, {
-            "word": "redundant",
-            "definition": "(adj.) mehrfach vorhanden, wiederholt",
-            "language": "de"
-        }, {
-            "word": "relevant",
-            "definition": "(adj.) bedeutsam, wichtig",
-            "language": "de"
-        }, {
-            "word": "renitent",
-            "definition": "(adj.) widersetzlich, bockig",
-            "language": "de"
-        }, {
-            "word": "renommiert",
-            "definition": "(adj.) angesehen, geschätzt",
-            "language": "de"
-        }, {
-            "word": "respektabel",
-            "definition": "(adj.) Respekt verdienend, achtbar",
-            "language": "de"
-        }, {
-            "word": "restriktiv",
-            "definition": "(adj.) einschränkend, beschränkend",
-            "language": "de"
-        }, {
-            "word": "rudimentär",
-            "definition": "(adj.) unvollständig, nur noch in Ansätzen vorhanden",
-            "language": "de"
-        }, {
-            "word": "sakrosankt",
-            "definition": "(adj.) unantastbar",
-            "language": "de"
-        }, {
-            "word": "satanisch",
-            "definition": "(adj.) böse, boshaft, teuflisch",
-            "language": "de"
-        }, {
-            "word": "saturiert",
-            "definition": "(adj.) satt",
-            "language": "de"
-        }, {
-            "word": "servil",
-            "definition": "(adj.) kriecherisch, untertänig",
-            "language": "de"
-        }, {
-            "word": "sibyllinisch",
-            "definition": "(adj.) rätselhaft, orakelhaft",
-            "language": "de"
-        }, {
-            "word": "skurril",
-            "definition": "(adj.) seltsam, befremdlich",
-            "language": "de"
-        }, {
-            "word": "stringent",
-            "definition": "(adj.) logisch, schlüssig, überzeugend",
-            "language": "de"
-        }, {
-            "word": "sublim",
-            "definition": "(adj.) erhaben, verfeinert",
-            "language": "de"
-        }, {
-            "word": "subsidiär",
-            "definition": "(adj.) behelfsmäßig",
-            "language": "de"
-        }, {
-            "word": "subtil",
-            "definition": "(adj.) mit Feingefühl, mit Sorgfalt",
-            "language": "de"
-        }, {
-            "word": "superb",
-            "definition": "(adj.) ausgezeichnet, vorzüglich",
-            "language": "de"
-        }, {
-            "word": "tolerabel",
-            "definition": "(adj.) annehmbar, erträglich",
-            "language": "de"
-        }, {
-            "word": "tradiert",
-            "definition": "(adj.) überliefert, traditionell",
-            "language": "de"
-        }, {
-            "word": "trist",
-            "definition": "(adj.) trostlos, freudlos",
-            "language": "de"
-        }, {
-            "word": "triumphant",
-            "definition": "(adj.) triumphierend, siegreich, erfolgreich",
-            "language": "de"
-        }, {
-            "word": "trivial",
-            "definition": "(adj.) durchschnittlich, alltäglich, gewöhnlich",
-            "language": "de"
-        }, {
-            "word": "unprätentiös",
-            "definition": "(adj.) bescheiden",
-            "language": "de"
-        }, {
-            "word": "vakant",
-            "definition": "(adj.) im Augenblick frei, nicht besetzt, offen",
-            "language": "de"
-        }, {
-            "word": "vehement",
-            "definition": "(adj.) heftig, ungestüm",
-            "language": "de"
-        }, {
-            "word": "versiert",
-            "definition": "(adj.) Bescheid wissend, geschickt",
-            "language": "de"
-        }
-    ]
+  "words": [
+    {
+      "word": "adäquat",
+      "definition": "(adj.) angemessen, entsprechend",
+      "language": "de"
+    },
+    {
+      "word": "affektiert",
+      "definition": "(adj.) gekünstelt, geziert",
+      "language": "de"
+    },
+    {
+      "word": "agil",
+      "definition": "(adj.) beweglich, wendig",
+      "language": "de"
+    },
+    {
+      "word": "akribisch",
+      "definition": "(adj.) höchst sorgfältig, äußerst gründlich",
+      "language": "de"
+    },
+    {
+      "word": "antagonistisch",
+      "definition": "(adj.) gegensätzlich, widerstreitend",
+      "language": "de"
+    },
+    {
+      "word": "apathisch",
+      "definition": "(adj.) teilnahmslos, abgestumpft, gleichgültig",
+      "language": "de"
+    },
+    {
+      "word": "arbiträr",
+      "definition": "(adj.) beliebig, willkürlich",
+      "language": "de"
+    },
+    {
+      "word": "argusäugig",
+      "definition": "(adj.) scharf beobachtend, wachsam",
+      "language": "de"
+    },
+    {
+      "word": "arkan",
+      "definition": "(adj.) geheim, nicht zugänglich",
+      "language": "de"
+    },
+    {
+      "word": "arriviert",
+      "definition": "(adj.) angesehen, etabliert",
+      "language": "de"
+    },
+    {
+      "word": "artifiziell",
+      "definition": "(adj.) künstlich, gekünstelt",
+      "language": "de"
+    },
+    {
+      "word": "banal",
+      "definition": "(adj.) nichts Besonderes, alltäglich, gewöhnlich",
+      "language": "de"
+    },
+    {
+      "word": "bigott",
+      "definition": "(adj.) frömmelnd, scheinheilig",
+      "language": "de"
+    },
+    {
+      "word": "brachial",
+      "definition": "(adj.) handgreiflich, mit roher Körperkraft",
+      "language": "de"
+    },
+    {
+      "word": "designiert",
+      "definition": "(adj.) für etwas (Aufgabe, Amt) vorgesehen",
+      "language": "de"
+    },
+    {
+      "word": "desolat",
+      "definition": "(adj.) trostlos, traurig, miserabel",
+      "language": "de"
+    },
+    {
+      "word": "diabolisch",
+      "definition": "(adj.) teuflisch",
+      "language": "de"
+    },
+    {
+      "word": "diametral",
+      "definition": "(adj.) entgegengesetzt, gegensätzlich",
+      "language": "de"
+    },
+    {
+      "word": "differenziert",
+      "definition": "(adj.) fein abgestuft, nuanciert",
+      "language": "de"
+    },
+    {
+      "word": "diffizil",
+      "definition": "(adj.) schwierig, kompliziert",
+      "language": "de"
+    },
+    {
+      "word": "diffus",
+      "definition": "(adj.) unklar, ungeordnet, verschwommen",
+      "language": "de"
+    },
+    {
+      "word": "disparat",
+      "definition": "(adj.) ungleichartig, nicht zueinanderpassend",
+      "language": "de"
+    },
+    {
+      "word": "disponibel",
+      "definition": "(adj.) sofort verfügbar, frei",
+      "language": "de"
+    },
+    {
+      "word": "distinguiert",
+      "definition": "(adj.) betont vornehm",
+      "language": "de"
+    },
+    {
+      "word": "divergent",
+      "definition": "(adj.) entgegengesetzt, auseinanderstrebend",
+      "language": "de"
+    },
+    {
+      "word": "dolorös",
+      "definition": "(adj.) schmerzhaft",
+      "language": "de"
+    },
+    {
+      "word": "durabel",
+      "definition": "(adj.) dauerhaft, haltbar, stabil",
+      "language": "de"
+    },
+    {
+      "word": "effektiv",
+      "definition": "(adj.) wirksam",
+      "language": "de"
+    },
+    {
+      "word": "effizient",
+      "definition": "(adj.) viel Leistung in Relation zum Aufwand zu erbringen",
+      "language": "de"
+    },
+    {
+      "word": "elaboriert",
+      "definition": "(adj.) differenziert ausgebildet, hoch entwickelt",
+      "language": "de"
+    },
+    {
+      "word": "elanvoll",
+      "definition": "(adj.) mit Schwung und Begeisterung",
+      "language": "de"
+    },
+    {
+      "word": "eloquent",
+      "definition": "(adj.) redegewandt, wortreich",
+      "language": "de"
+    },
+    {
+      "word": "eminent",
+      "definition": "(adj.) sehr, außerordentlich, äußerst",
+      "language": "de"
+    },
+    {
+      "word": "explizit",
+      "definition": "(adj.) ausdrücklich, deutlich",
+      "language": "de"
+    },
+    {
+      "word": "formidabel",
+      "definition": "(adj.) beeindruckend, großartig",
+      "language": "de"
+    },
+    {
+      "word": "frappant",
+      "definition": "(adj.) verblüffend, überraschend, frappierend",
+      "language": "de"
+    },
+    {
+      "word": "fulminant",
+      "definition": "(adj.) ausgezeichnet, toll, großartig",
+      "language": "de"
+    },
+    {
+      "word": "generös",
+      "definition": "(adj.) großzügig",
+      "language": "de"
+    },
+    {
+      "word": "gravierend",
+      "definition": "(adj.) schwerwiegend",
+      "language": "de"
+    },
+    {
+      "word": "ikonisch",
+      "definition": "(adj.) bildhaft, anschaulich",
+      "language": "de"
+    },
+    {
+      "word": "illuster",
+      "definition": "(adj.) berühmt, namhaft, Bewunderung hervorrufend",
+      "language": "de"
+    },
+    {
+      "word": "illustrativ",
+      "definition": "(adj.) veranschaulichend, erläuternd",
+      "language": "de"
+    },
+    {
+      "word": "impertinent",
+      "definition": "(adj.) ungehörig, frech, unverschämt",
+      "language": "de"
+    },
+    {
+      "word": "inadäquat",
+      "definition": "(adj.) unangemessen, unpassend",
+      "language": "de"
+    },
+    {
+      "word": "inakkurat",
+      "definition": "(adj.) unsorgfältig, ungenau",
+      "language": "de"
+    },
+    {
+      "word": "infernalisch",
+      "definition": "(adj.) höllisch, teuflisch, unerträglich",
+      "language": "de"
+    },
+    {
+      "word": "informell",
+      "definition": "(adj.) lässig, locker, leger",
+      "language": "de"
+    },
+    {
+      "word": "ingeniös",
+      "definition": "(adj.) erfinderisch, schöpferisch",
+      "language": "de"
+    },
+    {
+      "word": "initial",
+      "definition": "(adj.) anfänglich, beginnend",
+      "language": "de"
+    },
+    {
+      "word": "insistent",
+      "definition": "(adj.) beharrlich, hartnäckig",
+      "language": "de"
+    },
+    {
+      "word": "insolent",
+      "definition": "(adj.) anmaßend, unverschämt, frech",
+      "language": "de"
+    },
+    {
+      "word": "irrelevant",
+      "definition": "(adj.) unerheblich, ohne Bedeutung",
+      "language": "de"
+    },
+    {
+      "word": "kausal",
+      "definition": "(adj.) ursächlich",
+      "language": "de"
+    },
+    {
+      "word": "klandestin",
+      "definition": "(adj.) geheim, heimlich",
+      "language": "de"
+    },
+    {
+      "word": "kongenial",
+      "definition": "(adj.) einem Genie ebenbürtig",
+      "language": "de"
+    },
+    {
+      "word": "konsistent",
+      "definition": "(adj.) stabil, beständig",
+      "language": "de"
+    },
+    {
+      "word": "konsterniert",
+      "definition": "(adj.) bestürzt, fassungslos",
+      "language": "de"
+    },
+    {
+      "word": "kontinuierlich",
+      "definition": "(adj.) ununterbrochen",
+      "language": "de"
+    },
+    {
+      "word": "konträr",
+      "definition": "(adj.) entgegengesetzt, gegensätzlich",
+      "language": "de"
+    },
+    {
+      "word": "kurios",
+      "definition": "(adj.) merkwürdig, skurril",
+      "language": "de"
+    },
+    {
+      "word": "lapidar",
+      "definition": "(adj.) kurz und knapp, pointiert",
+      "language": "de"
+    },
+    {
+      "word": "larmoyant",
+      "definition": "(adj.) weinerlich",
+      "language": "de"
+    },
+    {
+      "word": "legitim",
+      "definition": "(adj.) gesetzlich anerkannt, rechtmäßig",
+      "language": "de"
+    },
+    {
+      "word": "loyal",
+      "definition": "(adj.) vertragstreu, redlich,",
+      "language": "de"
+    },
+    {
+      "word": "lukrativ",
+      "definition": "(adj.) einträglich, gewinnbringend",
+      "language": "de"
+    },
+    {
+      "word": "luziferisch",
+      "definition": "(adj.) teuflisch, bösartig",
+      "language": "de"
+    },
+    {
+      "word": "maliziös",
+      "definition": "(adj.) boshaft",
+      "language": "de"
+    },
+    {
+      "word": "marginal",
+      "definition": "(adj.) geringfügig, unwichtig",
+      "language": "de"
+    },
+    {
+      "word": "martialisch",
+      "definition": "(adj.) kriegerisch",
+      "language": "de"
+    },
+    {
+      "word": "medioker",
+      "definition": "(adj.) mittelmäßig",
+      "language": "de"
+    },
+    {
+      "word": "mokant",
+      "definition": "(adj.) spöttisch",
+      "language": "de"
+    },
+    {
+      "word": "morbid",
+      "definition": "(adj.) kränklich, angekränkelt, brüchig",
+      "language": "de"
+    },
+    {
+      "word": "nebulös",
+      "definition": "(adj.) verschwommen, unklar",
+      "language": "de"
+    },
+    {
+      "word": "neuralgisch",
+      "definition": "(adj.) besonders empfindlich, anfällig für Störungen",
+      "language": "de"
+    },
+    {
+      "word": "obligatorisch",
+      "definition": "(adj.) bindend, vorgeschrieben, verbindlich",
+      "language": "de"
+    },
+    {
+      "word": "obsolet",
+      "definition": "(adj.) überflüssig, nicht mehr üblich",
+      "language": "de"
+    },
+    {
+      "word": "obstinat",
+      "definition": "(adj.) starrsinnig, unbelehrbar",
+      "language": "de"
+    },
+    {
+      "word": "opportun",
+      "definition": "(adj.) gelegen kommend, von Vorteil",
+      "language": "de"
+    },
+    {
+      "word": "opulent",
+      "definition": "(adj.) üppig, verschwenderisch",
+      "language": "de"
+    },
+    {
+      "word": "ostentativ",
+      "definition": "(adj.) betont, provozierend, zur Schau stellend",
+      "language": "de"
+    },
+    {
+      "word": "pekuniär",
+      "definition": "(adj.) geldlich, finanziell",
+      "language": "de"
+    },
+    {
+      "word": "penibel",
+      "definition": "(adj.) kleinlich",
+      "language": "de"
+    },
+    {
+      "word": "perfide",
+      "definition": "(adj.) verschlagen, hinterhältig, gemein",
+      "language": "de"
+    },
+    {
+      "word": "perniziös",
+      "definition": "(adj.) unheilvoll, verderblich, bösartig",
+      "language": "de"
+    },
+    {
+      "word": "pittoresk",
+      "definition": "(adj.) malerisch",
+      "language": "de"
+    },
+    {
+      "word": "pointiert",
+      "definition": "(adj.) gezielt, scharf zugespitzt",
+      "language": "de"
+    },
+    {
+      "word": "prädestiniert",
+      "definition": "(adj.) in hohem Maße geeignet",
+      "language": "de"
+    },
+    {
+      "word": "prägnant",
+      "definition": "(adj.) etwas in knapper Form genau treffend",
+      "language": "de"
+    },
+    {
+      "word": "präsent",
+      "definition": "(adj.) anwesend, gegenwärtig",
+      "language": "de"
+    },
+    {
+      "word": "prätentiös",
+      "definition": "(adj.) Eindruck machen wollend, sich wichtig machen",
+      "language": "de"
+    },
+    {
+      "word": "prekär",
+      "definition": "(adj.) schwierig, heikel, misslich",
+      "language": "de"
+    },
+    {
+      "word": "preziös",
+      "definition": "(adj.) gekünstelt, unnatürlich (auch pretiös)",
+      "language": "de"
+    },
+    {
+      "word": "prononciert",
+      "definition": "(adj.) eindeutig, entschieden, betont",
+      "language": "de"
+    },
+    {
+      "word": "prosaisch",
+      "definition": "(adj.) nüchtern, sachlich, trocken",
+      "language": "de"
+    },
+    {
+      "word": "redundant",
+      "definition": "(adj.) mehrfach vorhanden, wiederholt",
+      "language": "de"
+    },
+    {
+      "word": "relevant",
+      "definition": "(adj.) bedeutsam, wichtig",
+      "language": "de"
+    },
+    {
+      "word": "renitent",
+      "definition": "(adj.) widersetzlich, bockig",
+      "language": "de"
+    },
+    {
+      "word": "renommiert",
+      "definition": "(adj.) angesehen, geschätzt",
+      "language": "de"
+    },
+    {
+      "word": "respektabel",
+      "definition": "(adj.) Respekt verdienend, achtbar",
+      "language": "de"
+    },
+    {
+      "word": "restriktiv",
+      "definition": "(adj.) einschränkend, beschränkend",
+      "language": "de"
+    },
+    {
+      "word": "rudimentär",
+      "definition": "(adj.) unvollständig, nur noch in Ansätzen vorhanden",
+      "language": "de"
+    },
+    {
+      "word": "sakrosankt",
+      "definition": "(adj.) unantastbar",
+      "language": "de"
+    },
+    {
+      "word": "satanisch",
+      "definition": "(adj.) böse, boshaft, teuflisch",
+      "language": "de"
+    },
+    {
+      "word": "saturiert",
+      "definition": "(adj.) satt",
+      "language": "de"
+    },
+    {
+      "word": "servil",
+      "definition": "(adj.) kriecherisch, untertänig",
+      "language": "de"
+    },
+    {
+      "word": "sibyllinisch",
+      "definition": "(adj.) rätselhaft, orakelhaft",
+      "language": "de"
+    },
+    {
+      "word": "skurril",
+      "definition": "(adj.) seltsam, befremdlich",
+      "language": "de"
+    },
+    {
+      "word": "stringent",
+      "definition": "(adj.) logisch, schlüssig, überzeugend",
+      "language": "de"
+    },
+    {
+      "word": "sublim",
+      "definition": "(adj.) erhaben, verfeinert",
+      "language": "de"
+    },
+    {
+      "word": "subsidiär",
+      "definition": "(adj.) behelfsmäßig",
+      "language": "de"
+    },
+    {
+      "word": "subtil",
+      "definition": "(adj.) mit Feingefühl, mit Sorgfalt",
+      "language": "de"
+    },
+    {
+      "word": "superb",
+      "definition": "(adj.) ausgezeichnet, vorzüglich",
+      "language": "de"
+    },
+    {
+      "word": "tolerabel",
+      "definition": "(adj.) annehmbar, erträglich",
+      "language": "de"
+    },
+    {
+      "word": "tradiert",
+      "definition": "(adj.) überliefert, traditionell",
+      "language": "de"
+    },
+    {
+      "word": "trist",
+      "definition": "(adj.) trostlos, freudlos",
+      "language": "de"
+    },
+    {
+      "word": "triumphant",
+      "definition": "(adj.) triumphierend, siegreich, erfolgreich",
+      "language": "de"
+    },
+    {
+      "word": "trivial",
+      "definition": "(adj.) durchschnittlich, alltäglich, gewöhnlich",
+      "language": "de"
+    },
+    {
+      "word": "unprätentiös",
+      "definition": "(adj.) bescheiden",
+      "language": "de"
+    },
+    {
+      "word": "vakant",
+      "definition": "(adj.) im Augenblick frei, nicht besetzt, offen",
+      "language": "de"
+    },
+    {
+      "word": "vehement",
+      "definition": "(adj.) heftig, ungestüm",
+      "language": "de"
+    },
+    {
+      "word": "versiert",
+      "definition": "(adj.) Bescheid wissend, geschickt",
+      "language": "de"
+    },
+    {
+      "word": "Holterdiepolter",
+      "definition": "(n.) Hastif und wenn möglich mit Lärm verlaufend",
+      "language": "de"
+    },
+    {
+      "word": "Plemplem",
+      "definition": "(n.) Nicht recht bei Verstand",
+      "language": "de"
+    },
+    {
+      "word": "Flitzpiepe",
+      "definition": "(n.) Ein Mensch, der nicht ernst genommen wird",
+      "language": "de"
+    },
+    {
+      "word": "Mumpitz",
+      "definition": "(n.) Unsinn, den man nicht zu bachten braucht",
+      "language": "de"
+    },
+    {
+      "word": "Larifari",
+      "definition": "(n.) Sinnloses Gerede",
+      "language": "de"
+    },
+    {
+      "word": "Papperlapapp",
+      "definition": "(n.) Abweisender Ausruf gegenüber unsinnigen Aussagen",
+      "language": "de"
+    },
+    {
+      "word": "Tohuwabohu",
+      "definition": "(n.) Ein wirres Durcheinander",
+      "language": "de"
+    },
+    {
+      "word": "Pillepalle",
+      "definition": "(n.) Eine Kleinigkeit, etwas unbedeutendes",
+      "language": "de"
+    },
+    {
+      "word": "Kinkerlitzchen",
+      "definition": "(n.) Unbedeutende Kleinigkeit, unnützer Kram",
+      "language": "de"
+    },
+    {
+      "word": "Kuddelmuddel",
+      "definition": "(n.) Ein chaotischer, ungeordneter Zustand",
+      "language": "de"
+    },
+    {
+      "word": "Kladderadatsch",
+      "definition": "(n.) Ein großes Durcheinander",
+      "language": "de"
+    },
+    {
+      "word": "Humbug",
+      "definition": "(n.) Etwas Unglaubwürdiges",
+      "language": "de"
+    },
+    {
+      "word": "Sammelsurium",
+      "definition": "(n.) Eine ungeordnete Sammlung",
+      "language": "de"
+    },
+    {
+      "word": "Kokolores",
+      "definition": "(n.) Etwas Unsinniges/ Törichtes Geschwätz",
+      "language": "de"
+    },
+    {
+      "word": "Fisimatenten",
+      "definition": "(n.) Der Versuch, einer unangenehmen Erklärung auszuweichen",
+      "language": "de"
+    },
+    {
+      "word": "Potzblitz",
+      "definition": "(n.) Ausdruck großer Verwirrung",
+      "language": "de"
+    }
+  ]
 }

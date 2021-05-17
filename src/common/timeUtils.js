@@ -1,7 +1,7 @@
 const moment = require('moment');
 
 function currentTimestamp() {
-     return moment(new Date()).format('DD.MM.YYYY - HH:mm:ss');
+     return moment(new Date()).format('DD.MM.YYYY - HH:mm:ss (Z)');
 }
 
 function formatSeconds(sec) {

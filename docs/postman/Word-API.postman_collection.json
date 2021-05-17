@@ -6,6 +6,24 @@
 	},
 	"item": [
 		{
+			"name": "Healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}{{port}}/api/health",
+					"host": [
+						"{{host}}{{port}}"
+					],
+					"path": [
+						"api",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get on /api",
 			"request": {
 				"method": "GET",

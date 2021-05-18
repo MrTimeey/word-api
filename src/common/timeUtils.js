@@ -1,19 +1,13 @@
 const moment = require('moment');
+const momentDurationFormatSetup = require('moment-duration-format');
 
 function currentTimestamp() {
      return moment(new Date()).format('DD.MM.YYYY - HH:mm:ss (Z)');
 }
 
 function formatSeconds(sec) {
-     function pad(s) {
-          return (s < 10 ? '0' : '') + s;
-     }
-     const days = Math.floor(sec / (60 * 60 * 24));
-     const hours = Math.floor(sec / (60 * 60));
-     const minutes = Math.floor((sec % (60 * 60)) / 60);
-     const seconds = Math.floor(sec % 60);
-
-     return pad(days) + 'd ' + pad(hours) + 'h ' + pad(minutes) + 'm ' + pad(seconds) + 's';
+     const duration = moment.duration(sec, 'seconds');
+     return duration.format('dd[d] hh[h] mm[m] ss[s]');
 }
 
 module.exports = {

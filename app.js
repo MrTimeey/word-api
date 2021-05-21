@@ -1,9 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const marked = require('marked');
 const { clientApiKeyValidation } = require('./src/common/authUtils');
-const { readFileAsync } = require('./src/common/fileUtils');
 
 const app = express();
 
@@ -29,11 +27,6 @@ router.use('/batch', require('./src/routers/batch.js'));
 router.use('/random', require('./src/routers/random.js'));
 router.use('/search', require('./src/routers/search'));
 router.use('/health', require('./src/routers/healthcheck'));
-
-app.get('/', async (req, res) => {
-     const file = await readFileAsync('README.md', 'utf8');
-     res.send(marked(file.toString()));
-});
 
 app.use('/api', router);
 

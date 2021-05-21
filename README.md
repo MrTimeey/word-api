@@ -64,7 +64,3 @@ Used various sources to gather the knowledge. I listed some of them to provide y
 * [Environment Variables](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
 * [Testing](https://www.youtube.com/watch?v=7VNgjfmv_fE&ab_channel=KrisFoster)
 * [Authorization](https://stoplight.io/blog/api-keys-best-practices-to-authenticate-apis/)
-
-## Contribution
-Please consider enabling linting on save:
-![Settings](./docs/linting_on_save.png "IntelliJ Linter Settings")

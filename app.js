@@ -3,6 +3,9 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const { clientApiKeyValidation } = require('./src/common/authUtils');
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger/word_spec.json');
+
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,7 +17,6 @@ const router = express.Router();
 router.use(clientApiKeyValidation);
 
 router.use(function(req, res, next) {
-     /*console.log('Something is happening!');*/
      next();
 });
 
@@ -29,5 +31,6 @@ router.use('/search', require('./src/routers/search'));
 router.use('/health', require('./src/routers/healthcheck'));
 
 app.use('/api', router);
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument, { explorer: false }));
 
 module.exports = app;

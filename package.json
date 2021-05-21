@@ -7,7 +7,8 @@
     "start": "node server.js",
     "serve": "nodemon server.js --exec",
     "test": "mocha --recursive --exit --timeout 1000000",
-    "lint": "eslint --fix --ext .js,.jsx ."
+    "lint": "eslint --fix --ext .js,.jsx .",
+    "generate-api": "swagger-jsdoc -d swagger/swagger-def.js src/routers/*.js -o swagger/word_spec.json"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
     "marked": "^0.7.0",
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
-    "mongoose": "^5.12.0"
+    "mongoose": "^5.12.0",
+    "swagger-jsdoc": "^6.0.0",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "chai": "^4.3.4",

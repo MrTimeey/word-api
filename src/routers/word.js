@@ -3,6 +3,13 @@ const Word = require('../db/models/word.js');
 const router = express.Router();
 const { validLanguage } = require('../common/languageUtils');
 
+/**
+ * @swagger
+ * /words:
+ *   get:
+ *     summary: Retrieve a list of words
+ *     description: Retrieve a list of words from the DB.
+ */
 router
      .route('/')
      .get(function(req, res) {

@@ -4,6 +4,15 @@ An API for retrieving and saving words to build a 'word of day' application.
 
 It's also a learning project for various technologies like nodejs, express and mongoose deployment.
 
+## Documentation
+The API is documented with swagger/openapi. The resources will automatically mount on startup.
+
+* Integrated swagger UI: `http://localhost:8000/`.
+* Openapi.yaml: `http://localhost:8000/doc/openapi.yaml`
+* Swagger.yaml: `http://localhost:8000/doc/swagger.yaml`
+* Openapi.json: `http://localhost:8000/doc/openapi.json`
+* Swagger.json: `http://localhost:8000/doc/swagger.json`
+
 ## Application env file
 Create an .env file in `src/config` for defining the application properties
 

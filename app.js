@@ -29,8 +29,10 @@ router.use('/batch', require('./src/routers/batch.js'));
 router.use('/random', require('./src/routers/random.js'));
 router.use('/search', require('./src/routers/search'));
 router.use('/health', require('./src/routers/healthcheck'));
-
+router.use('/tim', require('./src/routers/api-doc'));
 app.use('/api', router);
+
+app.use('/doc', require('./src/routers/api-doc'));
 app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument, { explorer: false }));
 
 module.exports = app;

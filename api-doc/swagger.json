@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "An API for retrieving and saving words",
-    "version": "0.1.0",
+    "version": "0.5.0",
     "title": "Word Express API",
     "contact": {
       "name": "GitHub",

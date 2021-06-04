@@ -1,6 +1,6 @@
 {
   "name": "word-api",
-  "version": "1.0.0",
+  "version": "0.5.0",
   "description": "An API for retrieving and saving words",
   "main": "server.js",
   "scripts": {
@@ -52,7 +52,9 @@
     "api",
     "nodejs",
     "express",
-    "mongoose"
+    "mongoose",
+    "swagger",
+    "openapi"
   ],
   "author": {
     "name": "MrTimeey",

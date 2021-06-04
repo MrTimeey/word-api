@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const { clientApiKeyValidation } = require('./src/common/authUtils');
 
 const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger/word_spec.json');
+const swaggerDocument = require('./api-doc/openapi.json');
 
 const app = express();
 

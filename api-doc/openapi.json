@@ -1,0 +1,585 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Word Express API",
+    "description": "An API for retrieving and saving words",
+    "contact": {
+      "name": "GitHub",
+      "url": "https://github.com/MrTimeey/word-api"
+    },
+    "license": {
+      "name": "Licensed Under MIT",
+      "url": "https://github.com/MrTimeey/word-api/blob/main/LICENSE"
+    },
+    "version": "0.1.0"
+  },
+  "servers": [
+    {
+      "url": "https://word-of-the-day.de/api"
+    }
+  ],
+  "tags": [
+    {
+      "name": "words"
+    },
+    {
+      "name": "batch"
+    },
+    {
+      "name": "random"
+    },
+    {
+      "name": "search"
+    }
+  ],
+  "paths": {
+    "/words": {
+      "get": {
+        "tags": [
+          "words"
+        ],
+        "summary": "Retrieve a list of all saved words",
+        "description": "Retrieve a list of all words from the DB.",
+        "responses": {
+          "200": {
+            "description": "A list of all words.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Words found!"
+                    },
+                    "words": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/WordEntity"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "words"
+        ],
+        "summary": "Add word to Database",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The word to add",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Word"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Word created!"
+                    },
+                    "word": {
+                      "$ref": "#/components/schemas/WordEntity"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "If word, definition or language is missing",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Wrong format provided!"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/words/{word_id}": {
+      "get": {
+        "tags": [
+          "words"
+        ],
+        "summary": "Get word by ID",
+        "parameters": [
+          {
+            "name": "word_id",
+            "in": "path",
+            "description": "ID of word to return",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Contains word or empty object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Word found!"
+                    },
+                    "word": {
+                      "$ref": "#/components/schemas/WordEntity"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "words"
+        ],
+        "summary": "Update word by ID",
+        "parameters": [
+          {
+            "name": "word_id",
+            "in": "path",
+            "description": "ID of word to return",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "succesful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Word updated!"
+                    },
+                    "word": {
+                      "$ref": "#/components/schemas/WordEntity"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "words"
+        ],
+        "summary": "Delete word by ID",
+        "parameters": [
+          {
+            "name": "word_id",
+            "in": "path",
+            "description": "ID of word to return",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "succesful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Word removed!"
+                    },
+                    "word": {
+                      "$ref": "#/components/schemas/WordEntity"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/batch/create_all": {
+      "post": {
+        "tags": [
+          "batch"
+        ],
+        "summary": "Add multiple words to database",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The words to add",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "words": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Word"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Words created!"
+                    },
+                    "created": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/WordEntity"
+                      }
+                    },
+                    "failed": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/WordEntity"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/batch/delete_all": {
+      "delete": {
+        "tags": [
+          "batch"
+        ],
+        "summary": "Delete all words from database",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Deleted all words!"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/random": {
+      "get": {
+        "tags": [
+          "random"
+        ],
+        "summary": "Get random word",
+        "responses": {
+          "200": {
+            "description": "Contains random word",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Random word found!"
+                    },
+                    "word": {
+                      "$ref": "#/components/schemas/WordEntity"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/random/{language}": {
+      "get": {
+        "tags": [
+          "random"
+        ],
+        "summary": "Get random word for specific language",
+        "parameters": [
+          {
+            "name": "language",
+            "in": "path",
+            "description": "The language",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Contains random word",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Random word found!"
+                    },
+                    "word": {
+                      "$ref": "#/components/schemas/WordEntity"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/search": {
+      "get": {
+        "tags": [
+          "search"
+        ],
+        "summary": "Get word by ID",
+        "parameters": [
+          {
+            "name": "word",
+            "in": "query",
+            "description": "The word for the search",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Contains word or empty object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "description": "Response message",
+                      "example": "Word found!"
+                    },
+                    "word": {
+                      "$ref": "#/components/schemas/WordEntity"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "tags": [
+          "health"
+        ],
+        "summary": "Check service health",
+        "responses": {
+          "200": {
+            "description": "Contains service information",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "WordEntity": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "The MongoDB ID",
+            "example": "60a109314fe65d00129003e0"
+          },
+          "word": {
+            "type": "string",
+            "description": "The word",
+            "example": "Somnambulist"
+          },
+          "definition": {
+            "type": "string",
+            "description": "The definition of given word",
+            "example": "(n.) A person who sleepwalks."
+          },
+          "language": {
+            "type": "string",
+            "description": "The language of given word",
+            "example": "en"
+          },
+          "__v": {
+            "type": "integer",
+            "description": "The internal database object version",
+            "example": 0
+          }
+        }
+      },
+      "Word": {
+        "type": "object",
+        "properties": {
+          "word": {
+            "type": "string",
+            "description": "The word",
+            "example": "Somnambulist"
+          },
+          "definition": {
+            "type": "string",
+            "description": "The definition of given word",
+            "example": "(n.) A person who sleepwalks."
+          },
+          "language": {
+            "type": "string",
+            "description": "The language of given word",
+            "example": "en"
+          }
+        }
+      },
+      "Health": {
+        "type": "object",
+        "properties": {
+          "uptime": {
+            "type": "string",
+            "description": "The uptime of the service",
+            "example": "04d 04h 54m 29s"
+          },
+          "message": {
+            "type": "string",
+            "description": "The response message",
+            "example": "ok"
+          },
+          "timestamp": {
+            "type": "string",
+            "description": "Current timestamp from server",
+            "example": "04.06.2021 - 23:12:17 (+00:00)"
+          }
+        }
+      }
+    }
+  }
+}

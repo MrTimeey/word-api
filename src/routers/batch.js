@@ -30,7 +30,7 @@ router.route('/create_all').post(function(req, res) {
           );
      });
      Promise.all(promises).then(() =>
-          res.json({
+          res.status(201).json({
                message: 'Words created!',
                created: inserted,
                failed: failed,

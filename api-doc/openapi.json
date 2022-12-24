@@ -16,6 +16,9 @@
   "servers": [
     {
       "url": "https://word-of-the-day.de/api"
+    },
+	{
+      "url": "https://word-api.mrtimeey.de/api"
     }
   ],
   "tags": [
